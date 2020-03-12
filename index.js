@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'client/build')))
 const PORT = process.env.PORT || 9000
 
 app.get('/api', (req,res) => {
-    res.json({ message: 'The api is UP' })
+    res.json({ message: 'API from previous' })
 })
 
 app.get("*", (req, res) => {
